@@ -2,14 +2,12 @@ import { useState } from 'react';
 import VideoContainer from './components/VideoBG';
 import Timer from './components/Timer'
 
-function App() {
-  const [selectedTime, setSelectedTime] = useState(600);
-  setSelectedTime(600);
-  
+function App() { 
+
   return (
     <div className="App">
       <VideoContainer/>
-      <Timer time={selectedTime} />
+      <Timer time={600} />
     </div>
   );
 }
