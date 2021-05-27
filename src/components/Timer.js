@@ -22,7 +22,6 @@ const Timer = ({time}) => {
         clearTimeout(timer);
       };
     },
-    [startTimer]
   );
 
     return <CircledTimer percentuage={timeLeft}>

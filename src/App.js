@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import VideoContainer from './components/VideoBG';
 import Timer from './components/Timer'
 
