@@ -2,8 +2,8 @@ import styled, {css} from "styled-components";
 
 export const CircledTimer = styled.div`
     width: 100%;
-    max-width: 300px;
-    height: 300px;
+    max-width: 250px;
+    height: 250px;
     position: absolute;
     top: 50%;
     left: 50%;
