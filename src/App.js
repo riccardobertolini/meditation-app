@@ -4,7 +4,8 @@ import Timer from './components/Timer'
 
 function App() {
   const [selectedTime, setSelectedTime] = useState(600);
-
+  setSelectedTime(600);
+  
   return (
     <div className="App">
       <VideoContainer/>
