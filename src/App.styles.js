@@ -5,4 +5,31 @@ export const VideoContainer = styled.video`
     height: 100%;
     min-height: 100%;
 
-`
+`;
+
+export const ExtraOptions = styled.div`
+    display: block;
+    bottom: 10%;
+    position: absolute;
+    height: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`;
+
+export const TimeButton = styled.button`
+    width: 200px;
+    margin-bottom: 5px;
+    background-color: rgba(255,255,255,.6);
+    border: 2px solid white;
+    color: #000;
+
+    &:last-of-type {
+        margin-bottom: 20px;
+    }
+`;

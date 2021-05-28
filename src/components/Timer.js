@@ -4,9 +4,11 @@ import React, {useEffect, useState} from "react";
 const Timer = ({time}) => {
     const [timeLeft, setTimeLeft] = useState(0);
     const [timerStarted, setTimerStarted] = useState(false);
+    const audio = new Audio("bell.mp3")
     
     const startTimer = () => {
         setTimerStarted(!timerStarted);
+        audio.play();
     }
 
     const resetTimer = () => {
@@ -18,6 +20,9 @@ const Timer = ({time}) => {
   useEffect(
     () => {
       let timer = setTimeout(() => (timerStarted && timeLeft < 100) && setTimeLeft(timeLeft + 1), time);
+      if(timeLeft === 100) {
+        audio.play();
+      }
       return () => {
         clearTimeout(timer);
       };

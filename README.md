@@ -9,10 +9,10 @@ Demo [click here](https://condescending-mccarthy-f5194c.netlify.app/)
 * Start/Stop button
 * Reset button
 * Currently 1 min. meditation
-
-## Next features
-
 * Select time
 * Sounds
 * Music
 * Music on/off button
+
+## Next features
+* better UI
