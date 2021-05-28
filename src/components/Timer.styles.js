@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, {css, keyframes} from "styled-components";
 
 export const CircledTimer = styled.div`
     width: 100%;
@@ -9,8 +9,7 @@ export const CircledTimer = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 10px solid #fff;
-    background: linear-gradient(to bottom, transparent ${props => props.percentuage}%, lightblue ${props => props.percentuage}%)
+    background: linear-gradient(to bottom, transparent ${props => props.percentuage}%, white ${props => props.percentuage}%);
 `;
 
 const buttonStyle = css`
@@ -28,7 +27,6 @@ const buttonStyle = css`
     height: 40px;
     font-weight: 600;
     font-family: Arial, sans-serif;
-    border: 2px solid #fff;
 `;
 
 export const StartButton = styled.button`
@@ -39,7 +37,6 @@ export const StartButton = styled.button`
 export const ResetButton = styled.button`
     ${buttonStyle}
     top: calc(50% + 30px);
-    filter: invert(1);
     font-size: 12px;
     height: 30px;
 `;
