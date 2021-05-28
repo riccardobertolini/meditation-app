@@ -6,6 +6,11 @@ export const VideoContainer = styled.video`
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: .75;
+    opacity: 1;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
     z-index: -1;
 `;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const VideoContainer = styled.video`
     width: 100%;
@@ -22,12 +22,22 @@ export const ExtraOptions = styled.div`
     flex-direction: column;
 `;
 
+export const activeButton = css`
+    font-size: 20px;
+    transition: .05s;
+`;
+
 export const TimeButton = styled.button`
     width: 200px;
     margin-bottom: 5px;
-    background-color: rgba(255,255,255,.6);
-    border: 2px solid white;
-    color: #000;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+
+    ${props => props.active && activeButton}
 
     &:last-of-type {
         margin-bottom: 20px;
