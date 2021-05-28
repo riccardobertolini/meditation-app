@@ -1,4 +1,4 @@
-import styled, {css, keyframes} from "styled-components";
+import styled, {css} from "styled-components";
 
 export const CircledTimer = styled.div`
     width: 100%;
