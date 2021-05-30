@@ -13,6 +13,3 @@ Demo [click here](https://condescending-mccarthy-f5194c.netlify.app/)
 * Sounds
 * Music
 * Music on/off button
-
-## Next features
-* better UI
